@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 78, "name": "WolvSec"}, "id": 4894, "date": "2022-07-31T20:52:35+00:00", "user": {"id": 762, "name": "123"}, "challenge_id": 220, "challenge": {"id": 220, "value": 100, "category": "misc", "name": "Feedback Survey"}, "type": "correct"}], "meta": {"count": 1}}

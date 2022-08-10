@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 274, "name": "TOH"}, "id": 2632, "date": "2022-07-30T11:33:54+00:00", "user": {"id": 1048, "name": "Focshole"}, "challenge_id": 174, "challenge": {"id": 174, "value": 50, "category": "web", "name": "Frame"}, "type": "correct"}], "meta": {"count": 1}}

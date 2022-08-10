@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 211, "name": "MadrHacks"}, "id": 2085, "date": "2022-07-30T07:40:12+00:00", "user": {"id": 525, "name": "GabryV"}, "challenge_id": 181, "challenge": {"id": 181, "value": 50, "category": "osint", "name": "Everyone's A Critic 2"}, "type": "correct"}], "meta": {"count": 1}}

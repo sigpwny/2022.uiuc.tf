@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 423, "name": "CiscoInterns"}, "id": 3911, "date": "2022-07-31T03:57:35+00:00", "user": {"id": 849, "name": "EmmaReuter"}, "challenge_id": 208, "challenge": {"id": 208, "value": 50, "category": "jail", "name": "safepy"}, "type": "correct"}], "meta": {"count": 1}}

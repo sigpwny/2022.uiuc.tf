@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 68, "name": "Social Engineering Experts"}, "id": 1662, "date": "2022-07-30T05:13:52+00:00", "user": {"id": 732, "name": "bob136"}, "challenge_id": 195, "challenge": {"id": 195, "value": 107, "category": "pwn", "name": "odd shell"}, "type": "correct"}], "meta": {"count": 1}}

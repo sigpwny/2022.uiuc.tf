@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UIUCTF 2022</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/files/97dddf3e64988e25cf891659d2accb94/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/themes/core/static/css/fonts.min.css?d=e0642a3b">
+<link rel="stylesheet" href="/themes/core/static/css/main.min.css?d=e0642a3b">
+<link rel="stylesheet" href="/themes/core/static/css/core.min.css?d=e0642a3b">
+<link rel="stylesheet" href="/themes/core/static/css/uiuc.min.css?d=e0642a3b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UIUCTF 2022">
+<meta property="og:description" content="SIGPwny presents UIUCTF - A capture-the-flag competition for all!">
+<meta property="og:image" content="/themes/uiuctf/static/img/UIUCTF-2022-Icon-UIUC.png">
+<meta property="og:url" content="https://2022.uiuc.tf">
+<meta name="twitter:title" content="UIUCTF 2022">
+<meta name="twitter:site" content="@SIGPwny">
+<meta name="twitter:image" content="/themes/uiuctf/static/img/UIUCTF-2022-Icon-UIUC.png" data-react-helmet="true">
+<meta name="twitter:description" content="SIGPwny presents UIUCTF - A capture-the-flag competition for all!">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#2c2f31">
+<script type="text/javascript">
+		var init = {
+			'urlRoot': "",
+			'csrfNonce': "7029debbfd7b2507c9c81acb7dffb3ec49cc56d9d4e285598f100a9d17fdbdb6",
+			'userMode': "teams",
+			'userId': 0,
+			'userName': "None",
+			'userEmail': "None",
+			'teamId': null, 
+			'teamName': "None",
+			'start': 1659139200,
+			'end': 1659312000,
+			'theme_settings': null
+		}
+	</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<div class="container">
+<a href="/" class="navbar-brand">
+<img class="img-responsive ctf_logo" src="/files/b36605a340c435fe2dc614bc03914fc7/UIUCTF-nav.png" height="25" alt="UIUCTF 2022">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="base-navbars">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="/users">Users</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/teams">Teams</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/scoreboard">Scoreboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/challenges">Challenges</a>
+</li>
+</ul>
+<hr class="d-sm-flex d-md-flex d-lg-none">
+<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+<li class="nav-item">
+<a class="nav-link" href="/register">
+<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+<i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+</span>
+<span class="d-sm-block d-md-none d-lg-block">
+<i class="fas fa-user-plus pr-1"></i>Register
+</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/login">
+<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+<i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+</span>
+<span class="d-sm-block d-md-none d-lg-block">
+<i class="fas fa-sign-in-alt pr-1"></i>Login
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<main role="main">
+<div class="jumbotron">
+<div class="container">
+<h1>Teams</h1>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<form method="GET" class="form-inline">
+<div class="form-group col-md-2">
+<select class="form-control custom-select w-100" id="field" name="field" required><option selected value="name">Name</option><option value="affiliation">Affiliation</option><option value="website">Website</option></select>
+</div>
+<div class="form-group col-md-8">
+<input class="form-control w-100" id="q" name="q" placeholder="Search for matching teams" required type="text" value="">
+</div>
+<div class="form-group col-md-2">
+<button type="submit" class="btn btn-primary w-100">
+<i class="fas fa-search" aria-hidden="true"></i>
+</button>
+</div>
+</form>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-12">
+<table class="table table-striped">
+<thead>
+<tr>
+<td><b>Team</b></td>
+<td><b>Website</b></td>
+<td class="d-none d-md-table-cell d-lg-table-cell"><b>Affiliation</b></td>
+<td class="d-none d-md-table-cell d-lg-table-cell"><b>Country</b></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="/teams/219">Dat2Phit</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/220">Hack-Sack&amp;Crack</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/221">VTeam</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/222">Akari</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/223">Koala Joey</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/224">VN_MSEC</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/225">AGN0ST05</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/226">Unravel Bureau</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/227">PWr <span class="__cf_email__" data-cfemail="62311b0c16221a">[email&#160;protected]</span> Err0r</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/228">CTC TeamNL</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/229">KUICS</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/230">memoririy</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/231">pcs</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/232">N30Z30N</a>
+</td>
+<td class="text-center" style="width: 10px;">
+<a href="https://twitter.com/TeamN30Z30N" target="_blank" rel="noopener">
+<i class="fas fa-external-link-alt" data-toggle="tooltip" data-placement="top" title="https://twitter.com/TeamN30Z30N"></i>
+</a>
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/233">WreckTheLine</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/234">hackerz</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/235">lso</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+<i class="flag-fr"></i>
+France
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/236">þee</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/237">Falzer</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/238">vubar</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/239">page2me</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/241">Tirunculi</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/242">AnonSec</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/243">e^iπ+1day</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/244">exmos</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/245">Null_IST</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/246">W4NN4 B3 3L1735</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/247">Shepardo</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/248">Brav0Team</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/249">ISITDTU</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+ <a href="/teams/250">C4C</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/251">DELTAxSYNDICATE</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/252">ret2rev</a>
+</td>
+<td class="text-center" style="width: 10px;">
+<a href="https://tx.ag/pwnsimps" target="_blank" rel="noopener">
+<i class="fas fa-external-link-alt" data-toggle="tooltip" data-placement="top" title="https://tx.ag/pwnsimps"></i>
+</a>
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/253">One Again</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/254">Cut3 Guys</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/255">4r4r4r491</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/256">Jump and Link</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/257">4l0n3</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/258">BendtnerBoyzz</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/259">SCSC</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/260">F!NDERS_KEEPERS</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/261">mushrooms</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/262">aklupaklu</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/263">Twix&amp;Inseralt</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/265">FIA</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/266">CyberTaskForceZero</a>
+</td>
+<td class="text-center" style="width: 10px;">
+<a href="https://ctf0.de" target="_blank" rel="noopener">
+<i class="fas fa-external-link-alt" data-toggle="tooltip" data-placement="top" title="https://ctf0.de"></i>
+</a>
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+<i class="flag-de"></i>
+Germany
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/267">Stinky_Inc</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/268">Belgian Red Daemons</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/269">5ca5dd</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+<tr>
+<td>
+<a href="/teams/270">__p4sswd__</a>
+</td>
+<td class="text-center" style="width: 10px;">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell">
+</td>
+<td class="d-none d-md-table-cell d-lg-table-cell text-center">
+<span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="text-center">Page
+<br>
+<a href="/teams?page=4">&lt;&lt;&lt;</a>
+<select class="page-select">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option selected>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+</select>
+<a href="/teams?page=6">&gt;&gt;&gt;</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container text-center">
+<a href="https://ctfd.io" class="text-secondary">
+<small class="text-muted">Powered by CTFd</small>
+</a>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="/themes/core/static/js/vendor.bundle.min.js?d=e0642a3b"></script>
+<script defer src="/themes/core/static/js/core.min.js?d=e0642a3b"></script>
+<script defer src="/themes/core/static/js/helpers.min.js?d=e0642a3b"></script>
+<script defer src="/themes/core/static/js/pages/main.min.js?d=e0642a3b"></script>
+<script>
+		// Apparently countdown needs to be here for some reason??
+		// instead of in the home page. idk probably for browser compatibility
+		// originally this was in the theme footer in ctfd
+		// trust kuilin
+		(function () {
+			// Update the count down every 1 second
+			var interval;
+			var update = function () {
+				var startTime = 1659139200000;
+				var endTime = 1659312000000;
+				var currentTime = new Date().getTime();
+
+				var beforeStart = currentTime < startTime;
+				var countDownDate = new Date(beforeStart ? startTime : endTime).getTime();
+
+				// Only run on the main page
+				if (!document.getElementById("demo")) return;
+
+				// Get today's date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the result in the element with id="demo"
+				var verb = beforeStart ? "starts" : "ends";
+				document.getElementById("demo").innerHTML = "UIUCTF " + verb + " in " + days + "d " + hours + "h "
+					+ minutes + "m " + seconds + "s ";
+
+				// If the count down is finished, write some text
+				if (distance < 0 && !beforeStart) {
+					clearInterval(interval);
+					document.getElementById("demo").innerHTML = "UIUCTF has ended!";
+				}
+			};
+			interval = setInterval(update, 1000);
+			update();
+		})();
+	</script>
+</body>
+</html>

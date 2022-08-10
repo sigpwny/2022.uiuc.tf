@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 64, "name": "MQCybersec"}, "id": 2514, "date": "2022-07-30T10:42:49+00:00", "user": {"id": 138, "name": "Solopie"}, "challenge_id": 203, "challenge": {"id": 203, "value": 1, "category": "misc", "name": "Join Discord"}, "type": "correct"}], "meta": {"count": 1}}

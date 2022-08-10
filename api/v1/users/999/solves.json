@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 323, "name": "nicholascw"}, "id": 2745, "date": "2022-07-30T12:25:50+00:00", "user": {"id": 999, "name": "shankerwangmiao"}, "challenge_id": 209, "challenge": {"id": 209, "value": 471, "category": "systems", "name": "Command Not Found"}, "type": "correct"}], "meta": {"count": 1}}

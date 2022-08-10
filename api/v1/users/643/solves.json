@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 305, "name": "CyberErudites"}, "id": 90, "date": "2022-07-30T00:12:29+00:00", "user": {"id": 643, "name": "echoSmail"}, "challenge_id": 203, "challenge": {"id": 203, "value": 1, "category": "misc", "name": "Join Discord"}, "type": "correct"}], "meta": {"count": 1}}

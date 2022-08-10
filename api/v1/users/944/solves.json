@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 125, "name": "Cryptonite"}, "id": 2192, "date": "2022-07-30T08:22:05+00:00", "user": {"id": 944, "name": "Necron3574"}, "challenge_id": 173, "challenge": {"id": 173, "value": 50, "category": "crypto", "name": "Military Grade Encryption"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 126, "name": "P&K"}, "id": 3481, "date": "2022-07-30T20:04:50+00:00", "user": {"id": 1209, "name": "sside"}, "challenge_id": 174, "challenge": {"id": 174, "value": 50, "category": "web", "name": "Frame"}, "type": "correct"}], "meta": {"count": 1}}

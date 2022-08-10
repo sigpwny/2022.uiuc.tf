@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 45, "name": "FITSEC"}, "id": 4283, "date": "2022-07-31T11:23:48+00:00", "user": {"id": 105, "name": "v10l3nt"}, "challenge_id": 195, "challenge": {"id": 195, "value": 107, "category": "pwn", "name": "odd shell"}, "type": "correct"}], "meta": {"count": 1}}

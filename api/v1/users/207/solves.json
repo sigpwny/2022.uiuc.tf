@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 87, "name": "D-7"}, "id": 4828, "date": "2022-07-31T20:11:43+00:00", "user": {"id": 207, "name": "sunhee"}, "challenge_id": 220, "challenge": {"id": 220, "value": 100, "category": "misc", "name": "Feedback Survey"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,3734 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UIUCTF 2022</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/files/97dddf3e64988e25cf891659d2accb94/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/themes/core/static/css/fonts.min.css?d=4fdf2ae3">
+<link rel="stylesheet" href="/themes/core/static/css/main.min.css?d=4fdf2ae3">
+<link rel="stylesheet" href="/themes/core/static/css/core.min.css?d=4fdf2ae3">
+<link rel="stylesheet" href="/themes/core/static/css/uiuc.min.css?d=4fdf2ae3">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UIUCTF 2022">
+<meta property="og:description" content="SIGPwny presents UIUCTF - A capture-the-flag competition for all!">
+<meta property="og:image" content="/themes/uiuctf/static/img/UIUCTF-2022-Icon-UIUC.png">
+<meta property="og:url" content="https://2022.uiuc.tf">
+<meta name="twitter:title" content="UIUCTF 2022">
+<meta name="twitter:site" content="@SIGPwny">
+<meta name="twitter:image" content="/themes/uiuctf/static/img/UIUCTF-2022-Icon-UIUC.png" data-react-helmet="true">
+<meta name="twitter:description" content="SIGPwny presents UIUCTF - A capture-the-flag competition for all!">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#2c2f31">
+<script type="text/javascript">
+		var init = {
+			'urlRoot': "",
+			'csrfNonce': "7029debbfd7b2507c9c81acb7dffb3ec49cc56d9d4e285598f100a9d17fdbdb6",
+			'userMode': "teams",
+			'userId': 0,
+			'userName': "None",
+			'userEmail': "None",
+			'teamId': null, 
+			'teamName': "None",
+			'start': 1659139200,
+			'end': 1659312000,
+			'theme_settings': null
+		}
+	</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<div class="container">
+<a href="/" class="navbar-brand">
+<img class="img-responsive ctf_logo" src="/files/b36605a340c435fe2dc614bc03914fc7/UIUCTF-nav.png" height="25" alt="UIUCTF 2022">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="base-navbars">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="/users">Users</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/teams">Teams</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/scoreboard">Scoreboard</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/challenges">Challenges</a>
+</li>
+</ul>
+<hr class="d-sm-flex d-md-flex d-lg-none">
+<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+<li class="nav-item">
+<a class="nav-link" href="/register">
+<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Register">
+<i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
+</span>
+<span class="d-sm-block d-md-none d-lg-block">
+<i class="fas fa-user-plus pr-1"></i>Register
+</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/login">
+<span class="d-block" data-toggle="tooltip" data-placement="bottom" title="Login">
+<i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
+</span>
+<span class="d-sm-block d-md-none d-lg-block">
+<i class="fas fa-sign-in-alt pr-1"></i>Login
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<main role="main">
+<div class="jumbotron">
+<div class="container">
+<h1>Scoreboard</h1>
+</div>
+</div>
+<div class="container">
+<div>
+</div>
+<div id="score-graph" class="row d-flex align-items-center">
+<div class="col-md-12 text-center">
+<i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+</div>
+</div>
+<div id="scoreboard" class="row">
+<div class="col-md-12">
+<table class="table table-striped">
+<thead>
+<tr>
+<td scope="col" width="10px"><b>Place</b></td>
+<td scope="col"><b>Team</b></td>
+<td scope="col"><b>Score</b></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row" class="text-center">1</th>
+<td>
+<a href="/teams/172">
+_TTT_
+</a>
+</td>
+<td>9765</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">2</th>
+<td>
+<a href="/teams/183">
+m0unt41n
+</a>
+</td>
+<td>8897</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">3</th>
+<td>
+<a href="/teams/120">
+ECSC Team France
+</a>
+</td>
+<td>8649</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">4</th>
+<td>
+<a href="/teams/281">
+idek
+</a>
+</td>
+<td>7390</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">5</th>
+<td>
+<a href="/teams/4">
+IrisSec
+</a>
+</td>
+<td>7171</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">6</th>
+<td>
+<a href="/teams/218">
+PLUS
+</a>
+</td>
+<td>6145</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">7</th>
+<td>
+<a href="/teams/351">
+Super Guesser
+</a>
+</td>
+<td>5852</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">8</th>
+<td>
+<a href="/teams/276">
+Shellphish
+</a>
+</td>
+<td>5393</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">9</th>
+<td>
+<a href="/teams/169">
+Black Bauhinia
+</a>
+</td>
+<td>5309</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">10</th>
+<td>
+<a href="/teams/180">
+_MMM_
+</a>
+</td>
+<td>5073</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">11</th>
+<td>
+<a href="/teams/149">
+purf3ct
+</a>
+</td>
+<td>4847</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">12</th>
+<td>
+<a href="/teams/82">
+Matryoshka
+</a>
+</td>
+<td>4756</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">13</th>
+<td>
+<a href="/teams/274">
+TOH
+</a>
+</td>
+<td>3955</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">14</th>
+<td>
+<a href="/teams/102">
+SNHT
+</a>
+</td>
+<td>3861</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">15</th>
+<td>
+<a href="/teams/249">
+ISITDTU
+</a>
+</td>
+<td>3580</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">16</th>
+<td>
+<a href="/teams/68">
+Social Engineering Experts
+</a>
+</td>
+<td>3520</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">17</th>
+<td>
+<a href="/teams/190">
+DiceGang
+</a>
+</td>
+<td>3515</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">18</th>
+<td>
+<a href="/teams/160">
+Phiat Lux
+</a>
+</td>
+<td>2987</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">19</th>
+<td>
+<a href="/teams/275">
+CyKor
+</a>
+</td>
+<td>2957</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">20</th>
+<td>
+<a href="/teams/338">
+/bad
+</a>
+</td>
+<td>2928</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">21</th>
+<td>
+<a href="/teams/266">
+CyberTaskForceZero
+</a>
+</td>
+<td>2812</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">22</th>
+<td>
+<a href="/teams/448">
+return catbui;
+</a>
+</td>
+<td>2732</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">23</th>
+<td>
+<a href="/teams/228">
+CTC TeamNL
+</a>
+</td>
+<td>2715</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">24</th>
+<td>
+<a href="/teams/121">
+Brrrr
+</a>
+</td>
+<td>2615</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">25</th>
+<td>
+<a href="/teams/233">
+WreckTheLine
+</a>
+</td>
+<td>2526</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">26</th>
+<td>
+<a href="/teams/137">
+PFS
+</a>
+</td>
+<td>2444</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">27</th>
+<td>
+<a href="/teams/165">
+./Vespiary
+</a>
+</td>
+<td>2398</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">28</th>
+<td>
+<a href="/teams/58">
+Applicative
+</a>
+</td>
+<td>2304</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">29</th>
+<td>
+<a href="/teams/179">
+CHCC
+</a>
+</td>
+<td>2258</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">30</th>
+<td>
+<a href="/teams/317">
+SIGmund Freud
+</a>
+</td>
+<td>2115</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">31</th>
+<td>
+<a href="/teams/305">
+CyberErudites
+</a>
+</td>
+<td>2108</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">32</th>
+<td>
+<a href="/teams/308">
+Mayas
+</a>
+</td>
+<td>2102</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">33</th>
+<td>
+<a href="/teams/476">
+MMUs_are_overrated
+</a>
+</td>
+<td>1936</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">34</th>
+<td>
+<a href="/teams/38">
+侍
+</a>
+</td>
+<td>1930</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">35</th>
+<td>
+<a href="/teams/283">
+The Teamless
+</a>
+</td>
+<td>1926</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">36</th>
+<td>
+<a href="/teams/279">
+Kernel Sanders
+</a>
+</td>
+<td>1901</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">37</th>
+<td>
+<a href="/teams/221">
+VTeam
+</a>
+</td>
+<td>1813</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">38</th>
+<td>
+<a href="/teams/323">
+nicholascw
+</a>
+</td>
+<td>1800</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">39</th>
+<td>
+<a href="/teams/373">
+A.k.a.t.s.u.k.i
+</a>
+</td>
+<td>1799</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">40</th>
+<td>
+<a href="/teams/426">
+dm0
+</a>
+</td>
+<td>1788</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">41</th>
+<td>
+<a href="/teams/286">
+S&amp;F
+</a>
+</td>
+<td>1772</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">42</th>
+<td>
+<a href="/teams/88">
+Sarmat
+</a>
+</td>
+<td>1687</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">43</th>
+<td>
+<a href="/teams/211">
+MadrHacks
+</a>
+</td>
+<td>1567</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">44</th>
+<td>
+<a href="/teams/140">
+KnightSec
+</a>
+</td>
+<td>1504</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">45</th>
+<td>
+<a href="/teams/184">
+ARESx
+</a>
+</td>
+<td>1445</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">46</th>
+<td>
+<a href="/teams/500">
+Kalmarunionen
+</a>
+</td>
+<td>1444</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">47</th>
+<td>
+<a href="/teams/238">
+vubar
+</a>
+</td>
+<td>1422</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">48</th>
+<td>
+<a href="/teams/143">
+PencilTesters
+</a>
+</td>
+<td>1392</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">49</th>
+<td>
+<a href="/teams/268">
+Belgian Red Daemons
+</a>
+</td>
+<td>1325</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">50</th>
+<td>
+<a href="/teams/429">
+Trion
+</a>
+</td>
+<td>1304</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">51</th>
+<td>
+<a href="/teams/434">
+<span class="__cf_email__" data-cfemail="3d59544b544e5452530904097d5a505c5451135e5250">[email&#160;protected]</span>
+</a>
+</td>
+<td>1279</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">52</th>
+<td>
+<a href="/teams/258">
+BendtnerBoyzz
+</a>
+</td>
+<td>1254</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">53</th>
+<td>
+<a href="/teams/125">
+Cryptonite
+</a>
+</td>
+<td>1153</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">54</th>
+<td>
+<a href="/teams/636">
+La Root&#39;In
+</a>
+</td>
+<td>1147</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">55</th>
+<td>
+<a href="/teams/145">
+<span class="__cf_email__" data-cfemail="386a5d5c6c5d595578756c6d">[email&#160;protected]</span>
+</a>
+</td>
+<td>1145</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">56</th>
+<td>
+<a href="/teams/78">
+WolvSec
+</a>
+</td>
+<td>1086</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">57</th>
+<td>
+<a href="/teams/59">
+LosFuzzys
+</a>
+</td>
+<td>1061</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">58</th>
+<td>
+<a href="/teams/504">
+flib
+</a>
+</td>
+<td>1059</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">59</th>
+<td>
+<a href="/teams/42">
+pwnormus
+</a>
+</td>
+<td>1047</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">60</th>
+<td>
+<a href="/teams/85">
+LimeXorLemon
+</a>
+</td>
+<td>1021</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">61</th>
+<td>
+<a href="/teams/54">
+NestingDoll
+</a>
+</td>
+<td>1020</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">62</th>
+<td>
+<a href="/teams/469">
+Ret2Solo
+</a>
+</td>
+<td>1003</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">63</th>
+<td>
+<a href="/teams/526">
+f1rs7_7im3
+</a>
+</td>
+<td>927</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">64</th>
+<td>
+<a href="/teams/557">
+FluffyPwny
+</a>
+</td>
+<td>912</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">65</th>
+<td>
+<a href="/teams/39">
+b01lers
+</a>
+</td>
+<td>903</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">66</th>
+<td>
+<a href="/teams/148">
+m1z0r3
+</a>
+</td>
+<td>888</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">67</th>
+<td>
+<a href="/teams/144">
+Contagion
+</a>
+</td>
+<td>886</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">68</th>
+<td>
+<a href="/teams/371">
+Wesserboy
+</a>
+</td>
+<td>878</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">69</th>
+<td>
+<a href="/teams/114">
+Hack South
+</a>
+</td>
+<td>863</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">70</th>
+<td>
+<a href="/teams/170">
+fakapped_m17m0
+</a>
+</td>
+<td>849</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">71</th>
+<td>
+<a href="/teams/202">
+ChurchOfJim
+</a>
+</td>
+<td>822</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">72</th>
+<td>
+<a href="/teams/86">
+BisonHackers
+</a>
+</td>
+<td>775</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">73</th>
+<td>
+<a href="/teams/440">
+Easy as a piece of code
+</a>
+</td>
+<td>738</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">74</th>
+<td>
+<a href="/teams/166">
+RUSEC
+</a>
+</td>
+<td>735</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">75</th>
+<td>
+<a href="/teams/36">
+phasetw0
+</a>
+</td>
+<td>721</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">76</th>
+<td>
+<a href="/teams/84">
+BYU Cyberia
+</a>
+</td>
+<td>713</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">77</th>
+<td>
+<a href="/teams/227">
+PWr <span class="__cf_email__" data-cfemail="c291bbacb682ba">[email&#160;protected]</span> Err0r
+</a>
+</td>
+<td>696</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">78</th>
+<td>
+<a href="/teams/294">
+Kava Bar Strobe Party
+</a>
+</td>
+<td>648</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">79</th>
+<td>
+<a href="/teams/27">
+ohm
+</a>
+</td>
+<td>636</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">80</th>
+<td>
+<a href="/teams/33">
+cxp
+</a>
+</td>
+<td>618</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">81</th>
+<td>
+<a href="/teams/252">
+ret2rev
+</a>
+</td>
+<td>613</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">82</th>
+<td>
+<a href="/teams/576">
+bjërk
+</a>
+</td>
+<td>606</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">83</th>
+<td>
+<a href="/teams/175">
+CyberSpace
+</a>
+</td>
+<td>601</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">84</th>
+<td>
+<a href="/teams/243">
+e^iπ+1day
+</a>
+</td>
+<td>600</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">85</th>
+<td>
+<a href="/teams/96">
+JHDiscord
+</a>
+</td>
+<td>598</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">86</th>
+<td>
+<a href="/teams/80">
+IUT GENESIS
+</a>
+</td>
+<td>593</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">87</th>
+<td>
+<a href="/teams/282">
+canarii
+</a>
+</td>
+<td>577</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">88</th>
+<td>
+<a href="/teams/64">
+MQCybersec
+</a>
+</td>
+<td>568</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">89</th>
+<td>
+<a href="/teams/378">
+kanon
+</a>
+</td>
+<td>555</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">90</th>
+<td>
+<a href="/teams/14">
+giveitago
+</a>
+</td>
+<td>551</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">91</th>
+<td>
+<a href="/teams/260">
+F!NDERS_KEEPERS
+</a>
+</td>
+<td>551</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">92</th>
+<td>
+<a href="/teams/369">
+FishEatFish
+</a>
+</td>
+<td>551</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">93</th>
+<td>
+<a href="/teams/208">
+noraneco
+</a>
+</td>
+<td>536</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">94</th>
+<td>
+<a href="/teams/396">
+Costco Shoppers Club
+</a>
+</td>
+<td>525</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">95</th>
+<td>
+<a href="/teams/192">
+Pymi
+</a>
+</td>
+<td>517</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">96</th>
+<td>
+<a href="/teams/519">
+SiliconBits
+</a>
+</td>
+<td>501</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">97</th>
+<td>
+<a href="/teams/87">
+D-7
+</a>
+</td>
+<td>501</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">98</th>
+<td>
+<a href="/teams/5">
+Perseus
+</a>
+</td>
+<td>501</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">99</th>
+<td>
+<a href="/teams/134">
+spritzers
+</a>
+</td>
+<td>499</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">100</th>
+<td>
+<a href="/teams/147">
+xonotic
+</a>
+</td>
+<td>489</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">101</th>
+<td>
+<a href="/teams/778">
+TamilCTF
+</a>
+</td>
+<td>489</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">102</th>
+<td>
+<a href="/teams/370">
+mzh
+</a>
+</td>
+<td>462</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">103</th>
+<td>
+<a href="/teams/254">
+Cut3 Guys
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">104</th>
+<td>
+<a href="/teams/263">
+Twix&amp;Inseralt
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">105</th>
+<td>
+<a href="/teams/69">
+NIS
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">106</th>
+<td>
+<a href="/teams/101">
+HuntsvilleTechSupport
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">107</th>
+<td>
+<a href="/teams/241">
+Tirunculi
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">108</th>
+<td>
+<a href="/teams/99">
+The Powerlifters
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">109</th>
+<td>
+<a href="/teams/159">
+Quintal Quarks
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">110</th>
+<td>
+<a href="/teams/658">
+ReactBois
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">111</th>
+<td>
+<a href="/teams/535">
+sp00ky__
+</a>
+</td>
+<td>451</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">112</th>
+<td>
+<a href="/teams/118">
+The Cat
+</a>
+</td>
+<td>450</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">113</th>
+<td>
+<a href="/teams/586">
+ISwearIGoogledIt
+</a>
+</td>
+<td>439</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">114</th>
+<td>
+<a href="/teams/13">
+BreakPoint
+</a>
+</td>
+<td>433</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">115</th>
+<td>
+<a href="/teams/655">
+Frost
+</a>
+</td>
+<td>420</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">116</th>
+<td>
+<a href="/teams/45">
+FITSEC
+</a>
+</td>
+<td>408</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">117</th>
+<td>
+<a href="/teams/250">
+C4C
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">118</th>
+<td>
+<a href="/teams/309">
+Brunnerne
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">119</th>
+<td>
+<a href="/teams/270">
+__p4sswd__
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">120</th>
+<td>
+<a href="/teams/51">
+ultra hacking club
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">121</th>
+<td>
+<a href="/teams/288">
+391
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">122</th>
+<td>
+<a href="/teams/479">
+l
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">123</th>
+<td>
+<a href="/teams/32">
+DeepSeaBush
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">124</th>
+<td>
+<a href="/teams/585">
+AntiAnti
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">125</th>
+<td>
+<a href="/teams/762">
+noteam
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">126</th>
+<td>
+<a href="/teams/50">
+n&amp;n
+</a>
+</td>
+<td>401</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">127</th>
+<td>
+<a href="/teams/755">
+Phish2Own
+</a>
+</td>
+<td>397</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">128</th>
+<td>
+<a href="/teams/574">
+soloman
+</a>
+</td>
+<td>371</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">129</th>
+<td>
+<a href="/teams/552">
+IIT(BHU)CyberSec
+</a>
+</td>
+<td>358</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">130</th>
+<td>
+<a href="/teams/236">
+þee
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">131</th>
+<td>
+<a href="/teams/374">
+a9k
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">132</th>
+<td>
+<a href="/teams/394">
+ayam
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">133</th>
+<td>
+<a href="/teams/355">
+BIT5crew
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">134</th>
+<td>
+<a href="/teams/129">
+What-A-What
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">135</th>
+<td>
+<a href="/teams/256">
+Jump and Link
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">136</th>
+<td>
+<a href="/teams/588">
+MrNo0ne
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">137</th>
+<td>
+<a href="/teams/741">
+The Middlemen
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">138</th>
+<td>
+<a href="/teams/104">
+Chief Quimby
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">139</th>
+<td>
+<a href="/teams/692">
+0ni0n
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">140</th>
+<td>
+<a href="/teams/177">
+Rainbow_Unicorns&lt;3
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">141</th>
+<td>
+<a href="/teams/21">
+Fweefwop
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">142</th>
+<td>
+<a href="/teams/185">
+LexMACS
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">143</th>
+<td>
+<a href="/teams/47">
+N1sh1K1g01s
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">144</th>
+<td>
+<a href="/teams/539">
+H34pst3rs
+</a>
+</td>
+<td>351</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">145</th>
+<td>
+<a href="/teams/171">
+HeroisDoMar
+</a>
+</td>
+<td>348</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">146</th>
+<td>
+<a href="/teams/295">
+AvenaQuaker
+</a>
+</td>
+<td>343</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">147</th>
+<td>
+<a href="/teams/219">
+Dat2Phit
+</a>
+</td>
+<td>336</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">148</th>
+<td>
+<a href="/teams/178">
+kundussy
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">149</th>
+<td>
+<a href="/teams/407">
+MeowMeow
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">150</th>
+<td>
+<a href="/teams/287">
+Let’s goooi
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">151</th>
+<td>
+<a href="/teams/433">
+jie
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">152</th>
+<td>
+<a href="/teams/123">
+4F73RD4RK
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">153</th>
+<td>
+<a href="/teams/259">
+SCSC
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">154</th>
+<td>
+<a href="/teams/244">
+exmos
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">155</th>
+<td>
+<a href="/teams/590">
+MLBowlers
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">156</th>
+<td>
+<a href="/teams/346">
+jayden
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">157</th>
+<td>
+<a href="/teams/621">
+a
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">158</th>
+<td>
+<a href="/teams/560">
+j.os.h.in
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">159</th>
+<td>
+<a href="/teams/594">
+Heaven&#39;s_Birds
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">160</th>
+<td>
+<a href="/teams/375">
+les amateurs
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">161</th>
+<td>
+<a href="/teams/132">
+bER4bb1t$
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">162</th>
+<td>
+<a href="/teams/450">
+InfoSecIITR
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">163</th>
+<td>
+<a href="/teams/498">
+Moreplavec
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">164</th>
+<td>
+<a href="/teams/740">
+BITSkrieg
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">165</th>
+<td>
+<a href="/teams/742">
+Grep Safari
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">166</th>
+<td>
+<a href="/teams/776">
+IEEEFTW
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">167</th>
+<td>
+<a href="/teams/781">
+ADCH
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">168</th>
+<td>
+<a href="/teams/324">
+bb0nk3rs
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">169</th>
+<td>
+<a href="/teams/91">
+LEGEND Society
+</a>
+</td>
+<td>301</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">170</th>
+<td>
+<a href="/teams/483">
+myself
+</a>
+</td>
+<td>300</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">171</th>
+<td>
+<a href="/teams/507">
+W3rni0
+</a>
+</td>
+<td>300</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">172</th>
+<td>
+<a href="/teams/456">
+ramen
+</a>
+</td>
+<td>300</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">173</th>
+<td>
+<a href="/teams/7">
+i me mine myself
+</a>
+</td>
+<td>298</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">174</th>
+<td>
+<a href="/teams/173">
+havce
+</a>
+</td>
+<td>293</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">175</th>
+<td>
+<a href="/teams/471">
+giamm9998
+</a>
+</td>
+<td>286</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">176</th>
+<td>
+<a href="/teams/70">
+BCS&amp;C
+</a>
+</td>
+<td>275</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">177</th>
+<td>
+<a href="/teams/197">
+R3pl1c4nt
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">178</th>
+<td>
+<a href="/teams/303">
+Fayte_
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">179</th>
+<td>
+<a href="/teams/222">
+Akari
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">180</th>
+<td>
+<a href="/teams/357">
+XpLORE
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">181</th>
+<td>
+<a href="/teams/162">
+JustForShow
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">182</th>
+<td>
+<a href="/teams/386">
+Temp
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">183</th>
+<td>
+<a href="/teams/408">
+c18c
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">184</th>
+<td>
+<a href="/teams/349">
+just me
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">185</th>
+<td>
+<a href="/teams/458">
+jyjh
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">186</th>
+<td>
+<a href="/teams/25">
+panda
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">187</th>
+<td>
+<a href="/teams/532">
+baka
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">188</th>
+<td>
+<a href="/teams/563">
+SSAFuze
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">189</th>
+<td>
+<a href="/teams/161">
+Team Pitucci
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">190</th>
+<td>
+<a href="/teams/253">
+One Again
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">191</th>
+<td>
+<a href="/teams/577">
+intyy
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">192</th>
+<td>
+<a href="/teams/296">
+__Ph03n1X__
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">193</th>
+<td>
+<a href="/teams/584">
+seungkong107
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">194</th>
+<td>
+<a href="/teams/12">
+myteam
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">195</th>
+<td>
+<a href="/teams/284">
+MUG1WARA
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">196</th>
+<td>
+<a href="/teams/579">
+cherry._.
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">197</th>
+<td>
+ <a href="/teams/607">
+T1-1E_130ys
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">198</th>
+<td>
+<a href="/teams/28">
+maharlika
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">199</th>
+<td>
+<a href="/teams/66">
+TFS
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">200</th>
+<td>
+<a href="/teams/320">
+Storm
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">201</th>
+<td>
+<a href="/teams/127">
+soWo
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">202</th>
+<td>
+<a href="/teams/527">
+maguro
+</a>
+</td>
+<td>251</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">203</th>
+<td>
+<a href="/teams/128">
+CoderZClub
+</a>
+</td>
+<td>250</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">204</th>
+<td>
+<a href="/teams/210">
+UIT-KiD
+</a>
+</td>
+<td>250</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">205</th>
+<td>
+<a href="/teams/774">
+HgbSec
+</a>
+</td>
+<td>250</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">206</th>
+<td>
+<a href="/teams/113">
+Ex1t
+</a>
+</td>
+<td>208</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">207</th>
+<td>
+<a href="/teams/297">
+forg
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">208</th>
+<td>
+<a href="/teams/117">
+nicx321
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">209</th>
+<td>
+<a href="/teams/350">
+4TheCronPop
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">210</th>
+<td>
+<a href="/teams/432">
+wackers
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">211</th>
+<td>
+<a href="/teams/230">
+memoririy
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">212</th>
+<td>
+<a href="/teams/567">
+Yellow
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">213</th>
+<td>
+<a href="/teams/318">
+Archbishop_of_Security
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">214</th>
+<td>
+<a href="/teams/122">
+CzechCyberTeam
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">215</th>
+<td>
+<a href="/teams/683">
+Learning Is Fun!
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">216</th>
+<td>
+<a href="/teams/785">
+F055il215
+</a>
+</td>
+<td>201</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">217</th>
+<td>
+<a href="/teams/528">
+zeus
+</a>
+</td>
+<td>200</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">218</th>
+<td>
+<a href="/teams/668">
+lonely
+</a>
+</td>
+<td>200</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">219</th>
+<td>
+<a href="/teams/661">
+0xCafeFace
+</a>
+</td>
+<td>200</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">220</th>
+<td>
+<a href="/teams/481">
+GLA
+</a>
+</td>
+<td>197</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">221</th>
+<td>
+<a href="/teams/186">
+bobby_tables
+</a>
+</td>
+<td>188</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">222</th>
+<td>
+<a href="/teams/413">
+hydroelectricities
+</a>
+</td>
+<td>167</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">223</th>
+<td>
+<a href="/teams/272">
+RooterX
+</a>
+</td>
+<td>167</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">224</th>
+<td>
+<a href="/teams/124">
+pgsd
+</a>
+</td>
+<td>151</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">225</th>
+<td>
+<a href="/teams/188">
+kubenpu
+</a>
+</td>
+<td>151</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">226</th>
+<td>
+<a href="/teams/604">
+k4mp3t
+</a>
+</td>
+<td>151</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">227</th>
+<td>
+<a href="/teams/224">
+VN_MSEC
+</a>
+</td>
+<td>151</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">228</th>
+<td>
+<a href="/teams/377">
+Iron Shark
+</a>
+</td>
+<td>151</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">229</th>
+<td>
+<a href="/teams/109">
+Pemuda Mendung
+</a>
+</td>
+<td>151</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">230</th>
+<td>
+<a href="/teams/649">
+Purdudes
+</a>
+</td>
+<td>138</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">231</th>
+<td>
+<a href="/teams/232">
+N30Z30N
+</a>
+</td>
+<td>135</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">232</th>
+<td>
+<a href="/teams/291">
+Ambush
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">233</th>
+<td>
+<a href="/teams/342">
+spencerpogo
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">234</th>
+<td>
+<a href="/teams/146">
+uwu_s3qu3nc3
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">235</th>
+<td>
+<a href="/teams/392">
+broccolinis
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">236</th>
+<td>
+<a href="/teams/430">
+TImiRUrYSECu
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">237</th>
+<td>
+<a href="/teams/246">
+W4NN4 B3 3L1735
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">238</th>
+<td>
+<a href="/teams/167">
+Demon
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">239</th>
+<td>
+<a href="/teams/41">
+Baja Badboys
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">240</th>
+<td>
+<a href="/teams/261">
+mushrooms
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">241</th>
+<td>
+<a href="/teams/646">
+FlaggerWTF
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">242</th>
+<td>
+<a href="/teams/587">
+Dd05
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">243</th>
+<td>
+<a href="/teams/362">
+leonuz
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">244</th>
+<td>
+<a href="/teams/71">
+kgrzk2
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">245</th>
+<td>
+<a href="/teams/37">
+TheWiz
+</a>
+</td>
+<td>101</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">246</th>
+<td>
+<a href="/teams/360">
+forbis
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">247</th>
+<td>
+<a href="/teams/400">
+ItzyBitzySpider
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">248</th>
+<td>
+<a href="/teams/464">
+The Bananas
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">249</th>
+<td>
+<a href="/teams/417">
+zer0pts
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">250</th>
+<td>
+<a href="/teams/229">
+KUICS
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">251</th>
+<td>
+<a href="/teams/453">
+123hunterz
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">252</th>
+<td>
+<a href="/teams/562">
+Giollo
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">253</th>
+<td>
+<a href="/teams/568">
+duflouis
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">254</th>
+<td>
+<a href="/teams/335">
+NOH
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">255</th>
+<td>
+<a href="/teams/630">
+SM-09
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">256</th>
+<td>
+<a href="/teams/620">
+WFH2022
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">257</th>
+<td>
+<a href="/teams/617">
+fishe
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">258</th>
+<td>
+<a href="/teams/635">
+thh123321
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">259</th>
+<td>
+<a href="/teams/67">
+BeyondSecurity
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">260</th>
+<td>
+<a href="/teams/251">
+DELTAxSYNDICATE
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">261</th>
+<td>
+<a href="/teams/723">
+natto
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">262</th>
+<td>
+<a href="/teams/126">
+P&amp;K
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">263</th>
+<td>
+<a href="/teams/76">
+:eyes:
+</a>
+</td>
+<td>100</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">264</th>
+<td>
+<a href="/teams/174">
+a&#39; or 1=&#39;1
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">265</th>
+<td>
+<a href="/teams/366">
+brycen-walker
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">266</th>
+<td>
+<a href="/teams/367">
+&lt;3
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">267</th>
+<td>
+<a href="/teams/361">
+carajillo enthusiasts
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">268</th>
+<td>
+<a href="/teams/390">
+pakekoding
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">269</th>
+<td>
+<a href="/teams/215">
+pog
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">270</th>
+<td>
+<a href="/teams/454">
+pwnkatsu
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">271</th>
+<td>
+<a href="/teams/17">
+Lusa Sec
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">272</th>
+<td>
+<a href="/teams/393">
+sm1le
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">273</th>
+<td>
+<a href="/teams/216">
+Hyperpolynom
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">274</th>
+<td>
+<a href="/teams/541">
+NoCtfNoLife
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">275</th>
+<td>
+<a href="/teams/518">
+Paleta
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">276</th>
+<td>
+<a href="/teams/554">
+V_V
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">277</th>
+<td>
+<a href="/teams/431">
+ckc9759
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">278</th>
+<td>
+<a href="/teams/406">
+Brkenwald
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">279</th>
+<td>
+<a href="/teams/667">
+down_button
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">280</th>
+<td>
+<a href="/teams/168">
+gR3yh4t5
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">281</th>
+<td>
+<a href="/teams/724">
+PWN5T4R5
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">282</th>
+<td>
+<a href="/teams/701">
+1nv4d3r5
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">283</th>
+<td>
+<a href="/teams/520">
+Cybernorth
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">284</th>
+<td>
+<a href="/teams/638">
+berrySecure
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">285</th>
+<td>
+<a href="/teams/780">
+cherry
+</a>
+</td>
+<td>51</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">286</th>
+<td>
+<a href="/teams/319">
+Team Nathan&#39;s Uncle
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">287</th>
+<td>
+<a href="/teams/333">
+L3g10n
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">288</th>
+<td>
+<a href="/teams/316">
+asoijsfd
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">289</th>
+<td>
+<a href="/teams/344">
+turb0
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">290</th>
+<td>
+<a href="/teams/354">
+hagin
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">291</th>
+<td>
+<a href="/teams/182">
+tekegg
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">292</th>
+<td>
+<a href="/teams/359">
+StrixGoldhorn
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">293</th>
+<td>
+<a href="/teams/399">
+KleinJ
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">294</th>
+<td>
+<a href="/teams/325">
+xSpark
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">295</th>
+<td>
+<a href="/teams/414">
+Undefined
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">296</th>
+<td>
+<a href="/teams/422">
+N
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">297</th>
+<td>
+<a href="/teams/205">
+AlNaNkiwi
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">298</th>
+<td>
+<a href="/teams/438">
+redd_team
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">299</th>
+<td>
+<a href="/teams/72">
+1nf1n1ty
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">300</th>
+<td>
+<a href="/teams/457">
+corgi
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">301</th>
+<td>
+<a href="/teams/472">
+onlyryn0
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">302</th>
+<td>
+<a href="/teams/447">
+C0FF33
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">303</th>
+<td>
+<a href="/teams/496">
+aaanomy
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">304</th>
+<td>
+<a href="/teams/501">
+&lt;OOO&gt;
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">305</th>
+<td>
+<a href="/teams/402">
+TienBipNet
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">306</th>
+<td>
+<a href="/teams/516">
+Mr_Lucifer
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">307</th>
+<td>
+<a href="/teams/340">
+hrstsh
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">308</th>
+<td>
+<a href="/teams/213">
+fr334aks
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">309</th>
+<td>
+<a href="/teams/271">
+__
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">310</th>
+<td>
+<a href="/teams/578">
+Refo&#39;s
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">311</th>
+<td>
+<a href="/teams/300">
+bruhmomento
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">312</th>
+<td>
+<a href="/teams/581">
+aaaaaaaaaaaaaa
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">313</th>
+<td>
+<a href="/teams/247">
+Shepardo
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">314</th>
+<td>
+<a href="/teams/559">
+NightTeam
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">315</th>
+<td>
+<a href="/teams/163">
+Red Team Lounge
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">316</th>
+<td>
+<a href="/teams/534">
+rude39
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">317</th>
+<td>
+<a href="/teams/660">
+TryAgainDz
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">318</th>
+<td>
+<a href="/teams/482">
+ChoucrouteFTW
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">319</th>
+<td>
+<a href="/teams/623">
+f
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">320</th>
+<td>
+<a href="/teams/524">
+gt
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">321</th>
+<td>
+<a href="/teams/285">
+EvilBunnyWrote
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">322</th>
+<td>
+<a href="/teams/677">
+Seadyot
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">323</th>
+<td>
+<a href="/teams/330">
+Ace_Sec
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">324</th>
+<td>
+<a href="/teams/684">
+D34DB33F
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">325</th>
+<td>
+<a href="/teams/423">
+CiscoInterns
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">326</th>
+<td>
+<a href="/teams/695">
+0xHACKIT
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">327</th>
+<td>
+<a href="/teams/602">
+burger
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">328</th>
+<td>
+<a href="/teams/691">
+hatuna1337
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">329</th>
+<td>
+<a href="/teams/705">
+on3ra1n
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">330</th>
+<td>
+<a href="/teams/718">
+basura
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">331</th>
+<td>
+<a href="/teams/719">
+Wans
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">332</th>
+<td>
+<a href="/teams/729">
+Neptunians
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">333</th>
+<td>
+<a href="/teams/708">
+Riot Of Noob
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">334</th>
+<td>
+<a href="/teams/735">
+_emp3r0r_
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">335</th>
+<td>
+<a href="/teams/591">
+CUSTOS
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">336</th>
+<td>
+<a href="/teams/411">
+hamayanhamayan
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">337</th>
+<td>
+<a href="/teams/763">
+CowboyBebop
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">338</th>
+<td>
+<a href="/teams/788">
+toasty
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">339</th>
+<td>
+<a href="/teams/794">
+YegSecCTF
+</a>
+</td>
+<td>50</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">340</th>
+<td>
+<a href="/teams/292">
+KerKerYuan
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">341</th>
+<td>
+<a href="/teams/56">
+lowpolybrew
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">342</th>
+<td>
+<a href="/teams/302">
+ACWHCC Cyber Response Team
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">343</th>
+<td>
+<a href="/teams/311">
+Miku
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">344</th>
+<td>
+<a href="/teams/312">
+SoloDecoy
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">345</th>
+<td>
+<a href="/teams/152">
+<span class="__cf_email__" data-cfemail="72314231325f31421e">[email&#160;protected]</span>@
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">346</th>
+<td>
+<a href="/teams/310">
+Coffee
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">347</th>
+<td>
+<a href="/teams/15">
+sandwichmafia
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">348</th>
+<td>
+<a href="/teams/329">
+meltdown
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">349</th>
+<td>
+<a href="/teams/341">
+n0n
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">350</th>
+<td>
+<a href="/teams/150">
+4r0wana
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">351</th>
+<td>
+<a href="/teams/343">
+ex3x
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">352</th>
+<td>
+<a href="/teams/376">
+Happy_Day
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">353</th>
+<td>
+<a href="/teams/385">
+imaginaryneko
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">354</th>
+<td>
+<a href="/teams/189">
+h1riluk
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">355</th>
+<td>
+<a href="/teams/387">
+cvil
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">356</th>
+<td>
+<a href="/teams/313">
+scriptohio
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">357</th>
+<td>
+<a href="/teams/397">
+Bo0tC4mp
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">358</th>
+<td>
+<a href="/teams/403">
+jw81
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">359</th>
+<td>
+<a href="/teams/409">
+Trung Phuoc Ha
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">360</th>
+<td>
+<a href="/teams/226">
+Unravel Bureau
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">361</th>
+<td>
+<a href="/teams/242">
+AnonSec
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">362</th>
+<td>
+<a href="/teams/428">
+FRAMEWORK
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">363</th>
+<td>
+<a href="/teams/19">
+Rokirovka
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">364</th>
+<td>
+<a href="/teams/455">
+Disboard
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">365</th>
+<td>
+<a href="/teams/452">
+bdhxgrp
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">366</th>
+<td>
+<a href="/teams/262">
+aklupaklu
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">367</th>
+<td>
+<a href="/teams/486">
+The Akatsuki
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">368</th>
+<td>
+<a href="/teams/484">
+<span class="__cf_email__" data-cfemail="bfebf7ffccef">[email&#160;protected]</span>
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">369</th>
+<td>
+<a href="/teams/488">
+CURS&lt;R
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">370</th>
+<td>
+<a href="/teams/511">
+CYSEC
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">371</th>
+<td>
+<a href="/teams/505">
+n4n0_st4n
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">372</th>
+<td>
+<a href="/teams/521">
+Red Knights
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">373</th>
+<td>
+<a href="/teams/436">
+sbstm
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">374</th>
+<td>
+<a href="/teams/517">
+starrynka
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">375</th>
+<td>
+<a href="/teams/542">
+Watchmen
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">376</th>
+<td>
+<a href="/teams/191">
+FlagKillers
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">377</th>
+<td>
+<a href="/teams/569">
+Cla55N0tF0und
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">378</th>
+<td>
+<a href="/teams/582">
+teamrain
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">379</th>
+<td>
+<a href="/teams/443">
+ChilledObservers
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">380</th>
+<td>
+<a href="/teams/10">
+EnigmaMinds
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">381</th>
+<td>
+<a href="/teams/606">
+No Rules
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">382</th>
+<td>
+<a href="/teams/611">
+curd
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">383</th>
+<td>
+<a href="/teams/631">
+S3cj0y
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">384</th>
+<td>
+<a href="/teams/641">
+NEUQRO
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">385</th>
+<td>
+<a href="/teams/642">
+<span class="__cf_email__" data-cfemail="a1f2e2e1">[email&#160;protected]</span>
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">386</th>
+<td>
+<a href="/teams/653">
+ziee
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">387</th>
+<td>
+<a href="/teams/704">
+whoami
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">388</th>
+<td>
+<a href="/teams/710">
+Gon_Tanaka
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">389</th>
+<td>
+<a href="/teams/707">
+The_Apocalypse
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">390</th>
+<td>
+<a href="/teams/725">
+Cyb3r P4tr10t1c
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">391</th>
+<td>
+<a href="/teams/513">
+c0d3x
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">392</th>
+<td>
+<a href="/teams/761">
+thesolos
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">393</th>
+<td>
+<a href="/teams/53">
+fzhshzh
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">394</th>
+<td>
+<a href="/teams/766">
+Team_Mort!s
+</a>
+</td>
+<td>1</td>
+</tr>
+<tr>
+<th scope="row" class="text-center">395</th>
+<td>
+<a href="/teams/792">
+Forlindev
+</a>
+</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container text-center">
+<a href="https://ctfd.io" class="text-secondary">
+<small class="text-muted">Powered by CTFd</small>
+</a>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="/themes/core/static/js/vendor.bundle.min.js?d=4fdf2ae3"></script>
+<script defer src="/themes/core/static/js/core.min.js?d=4fdf2ae3"></script>
+<script defer src="/themes/core/static/js/helpers.min.js?d=4fdf2ae3"></script>
+<script defer src="/themes/core/static/js/pages/scoreboard.min.js?d=4fdf2ae3"></script>
+<script defer src="/themes/core/static/js/echarts.bundle.min.js?d=4fdf2ae3"></script>
+<script>
+		// Apparently countdown needs to be here for some reason??
+		// instead of in the home page. idk probably for browser compatibility
+		// originally this was in the theme footer in ctfd
+		// trust kuilin
+		(function () {
+			// Update the count down every 1 second
+			var interval;
+			var update = function () {
+				var startTime = 1659139200000;
+				var endTime = 1659312000000;
+				var currentTime = new Date().getTime();
+
+				var beforeStart = currentTime < startTime;
+				var countDownDate = new Date(beforeStart ? startTime : endTime).getTime();
+
+				// Only run on the main page
+				if (!document.getElementById("demo")) return;
+
+				// Get today's date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Display the result in the element with id="demo"
+				var verb = beforeStart ? "starts" : "ends";
+				document.getElementById("demo").innerHTML = "UIUCTF " + verb + " in " + days + "d " + hours + "h "
+					+ minutes + "m " + seconds + "s ";
+
+				// If the count down is finished, write some text
+				if (distance < 0 && !beforeStart) {
+					clearInterval(interval);
+					document.getElementById("demo").innerHTML = "UIUCTF has ended!";
+				}
+			};
+			interval = setInterval(update, 1000);
+			update();
+		})();
+	</script>
+</body>
+</html>

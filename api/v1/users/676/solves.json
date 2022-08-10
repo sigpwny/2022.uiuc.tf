@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 54, "name": "NestingDoll"}, "id": 50, "date": "2022-07-30T00:05:34+00:00", "user": {"id": 676, "name": "oreosec"}, "challenge_id": 174, "challenge": {"id": 174, "value": 50, "category": "web", "name": "Frame"}, "type": "correct"}], "meta": {"count": 1}}

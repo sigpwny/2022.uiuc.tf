@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 159, "name": "Quintal Quarks"}, "id": 5000, "date": "2022-07-31T22:17:24+00:00", "user": {"id": 524, "name": "c47s"}, "challenge_id": 187, "challenge": {"id": 187, "value": 50, "category": "osint", "name": "Everyone's A Critic 4"}, "type": "correct"}], "meta": {"count": 1}}

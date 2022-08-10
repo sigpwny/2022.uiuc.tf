@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 788, "name": "toasty"}, "id": 4887, "date": "2022-07-31T20:44:27+00:00", "user": {"id": 1396, "name": "toasty"}, "challenge_id": 177, "challenge": {"id": 177, "value": 50, "category": "web", "name": "AR Pwny"}, "type": "correct"}], "meta": {"count": 1}}

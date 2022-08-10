@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 695, "name": "0xHACKIT"}, "id": 4031, "date": "2022-07-31T05:31:32+00:00", "user": {"id": 1260, "name": "first_tf"}, "challenge_id": 177, "challenge": {"id": 177, "value": 50, "category": "web", "name": "AR Pwny"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 719, "name": "Wans"}, "id": 4264, "date": "2022-07-31T10:49:09+00:00", "user": {"id": 1300, "name": "Wans"}, "challenge_id": 174, "challenge": {"id": 174, "value": 50, "category": "web", "name": "Frame"}, "type": "correct"}], "meta": {"count": 1}}

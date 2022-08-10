@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 114, "name": "Hack South"}, "id": 2741, "date": "2022-07-30T12:23:39+00:00", "user": {"id": 338, "name": "qdada"}, "challenge_id": 174, "challenge": {"id": 174, "value": 50, "category": "web", "name": "Frame"}, "type": "correct"}], "meta": {"count": 1}}

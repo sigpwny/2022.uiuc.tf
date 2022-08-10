@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 319, "name": "Team Nathan's Uncle"}, "id": 138, "date": "2022-07-30T00:19:20+00:00", "user": {"id": 708, "name": "bmagy"}, "challenge_id": 208, "challenge": {"id": 208, "value": 50, "category": "jail", "name": "safepy"}, "type": "correct"}], "meta": {"count": 1}}

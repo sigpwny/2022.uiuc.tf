@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 78, "name": "WolvSec"}, "id": 3869, "date": "2022-07-31T03:13:19+00:00", "user": {"id": 1200, "name": "iQlusion"}, "challenge_id": 189, "challenge": {"id": 189, "value": 88, "category": "pwn", "name": "easy math 1"}, "type": "correct"}], "meta": {"count": 1}}

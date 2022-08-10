@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 163, "name": "Red Team Lounge"}, "id": 3233, "date": "2022-07-30T15:52:24+00:00", "user": {"id": 134, "name": "Cerberus_tm"}, "challenge_id": 208, "challenge": {"id": 208, "value": 50, "category": "jail", "name": "safepy"}, "type": "correct"}], "meta": {"count": 1}}

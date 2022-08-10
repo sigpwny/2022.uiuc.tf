@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 58, "name": "Applicative"}, "id": 4148, "date": "2022-07-31T08:35:55+00:00", "user": {"id": 1247, "name": "verylostpenguin"}, "challenge_id": 173, "challenge": {"id": 173, "value": 50, "category": "crypto", "name": "Military Grade Encryption"}, "type": "correct"}], "meta": {"count": 1}}

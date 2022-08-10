@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 481, "name": "GLA"}, "id": 2262, "date": "2022-07-30T09:04:08+00:00", "user": {"id": 984, "name": "Canlex"}, "challenge_id": 198, "challenge": {"id": 198, "value": 197, "category": "rev", "name": "Reject to Inject"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 457, "name": "corgi"}, "id": 1839, "date": "2022-07-30T06:29:41+00:00", "user": {"id": 902, "name": "blustrike"}, "challenge_id": 177, "challenge": {"id": 177, "value": 50, "category": "web", "name": "AR Pwny"}, "type": "correct"}], "meta": {"count": 1}}

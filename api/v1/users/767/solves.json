@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 99, "name": "The Powerlifters"}, "id": 4915, "date": "2022-07-31T21:13:38+00:00", "user": {"id": 767, "name": "Jshepin"}, "challenge_id": 220, "challenge": {"id": 220, "value": 100, "category": "misc", "name": "Feedback Survey"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 228, "name": "CTC TeamNL"}, "id": 2900, "date": "2022-07-30T13:34:12+00:00", "user": {"id": 506, "name": "Rx0b"}, "challenge_id": 202, "challenge": {"id": 202, "value": 50, "category": "osint", "name": "Everyone's A Critic 6"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 96, "name": "JHDiscord"}, "id": 3565, "date": "2022-07-30T21:12:32+00:00", "user": {"id": 279, "name": "Minerva_007"}, "challenge_id": 198, "challenge": {"id": 198, "value": 197, "category": "rev", "name": "Reject to Inject"}, "type": "correct"}], "meta": {"count": 1}}

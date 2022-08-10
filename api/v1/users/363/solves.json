@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 169, "name": "Black Bauhinia"}, "id": 4633, "date": "2022-07-31T17:50:01+00:00", "user": {"id": 363, "name": "cire_meat_pop"}, "challenge_id": 195, "challenge": {"id": 195, "value": 107, "category": "pwn", "name": "odd shell"}, "type": "correct"}], "meta": {"count": 1}}

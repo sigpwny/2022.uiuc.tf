@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 211, "name": "MadrHacks"}, "id": 3438, "date": "2022-07-30T19:21:37+00:00", "user": {"id": 1093, "name": "gianzav"}, "challenge_id": 214, "challenge": {"id": 214, "value": 117, "category": "jail", "name": "A Horse with No Names"}, "type": "correct"}], "meta": {"count": 1}}

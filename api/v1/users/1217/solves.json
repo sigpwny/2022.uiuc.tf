@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 649, "name": "Purdudes"}, "id": 4002, "date": "2022-07-31T04:53:15+00:00", "user": {"id": 1217, "name": "hilldaddyjr"}, "challenge_id": 189, "challenge": {"id": 189, "value": 88, "category": "pwn", "name": "easy math 1"}, "type": "correct"}], "meta": {"count": 1}}

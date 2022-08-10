@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 173, "name": "havce"}, "id": 2474, "date": "2022-07-30T10:29:16+00:00", "user": {"id": 965, "name": "kriive"}, "challenge_id": 195, "challenge": {"id": 195, "value": 107, "category": "pwn", "name": "odd shell"}, "type": "correct"}], "meta": {"count": 1}}

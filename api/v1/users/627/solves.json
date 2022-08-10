@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 282, "name": "canarii"}, "id": 1275, "date": "2022-07-30T03:42:28+00:00", "user": {"id": 627, "name": "biazo"}, "challenge_id": 198, "challenge": {"id": 198, "value": 197, "category": "rev", "name": "Reject to Inject"}, "type": "correct"}], "meta": {"count": 1}}

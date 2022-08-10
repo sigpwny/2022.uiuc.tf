@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 428, "name": "FRAMEWORK"}, "id": 1578, "date": "2022-07-30T04:52:09+00:00", "user": {"id": 855, "name": "FRAMEWORK"}, "challenge_id": 203, "challenge": {"id": 203, "value": 1, "category": "misc", "name": "Join Discord"}, "type": "correct"}], "meta": {"count": 1}}

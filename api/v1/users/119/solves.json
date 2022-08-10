@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 330, "name": "Ace_Sec"}, "id": 3814, "date": "2022-07-31T01:46:34+00:00", "user": {"id": 119, "name": "sekulica88"}, "challenge_id": 196, "challenge": {"id": 196, "value": 50, "category": "osint", "name": "Everyone's A Critic 1"}, "type": "correct"}], "meta": {"count": 1}}

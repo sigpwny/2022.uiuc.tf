@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 300, "name": "bruhmomento"}, "id": 3011, "date": "2022-07-30T14:21:48+00:00", "user": {"id": 679, "name": "ShellTear"}, "challenge_id": 196, "challenge": {"id": 196, "value": 50, "category": "osint", "name": "Everyone's A Critic 1"}, "type": "correct"}], "meta": {"count": 1}}

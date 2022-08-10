@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 776, "name": "IEEEFTW"}, "id": 4621, "date": "2022-07-31T17:37:06+00:00", "user": {"id": 1376, "name": "Babafaba"}, "challenge_id": 196, "challenge": {"id": 196, "value": 50, "category": "osint", "name": "Everyone's A Critic 1"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 21, "name": "Fweefwop"}, "id": 1337, "date": "2022-07-30T03:54:54+00:00", "user": {"id": 661, "name": "Julkun01"}, "challenge_id": 187, "challenge": {"id": 187, "value": 50, "category": "osint", "name": "Everyone's A Critic 4"}, "type": "correct"}], "meta": {"count": 1}}

@@ -1,0 +1,1 @@
+{"success": true, "data": [{"team": {"id": 59, "name": "LosFuzzys"}, "id": 4250, "date": "2022-07-31T10:38:33+00:00", "user": {"id": 1100, "name": "PaideiaDilemma"}, "challenge_id": 186, "challenge": {"id": 186, "value": 205, "category": "pwn", "name": "no-syscalls-allowed.c"}, "type": "correct"}], "meta": {"count": 1}}
